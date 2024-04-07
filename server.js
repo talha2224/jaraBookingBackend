@@ -6,6 +6,8 @@ const connectDatabase = require('./connection/database');
 const {errorMiddleware, ErrorResponse} = require('./middlewares/error/error');
 const {statusCode} = require('./utils/statusCode');
 const {allRoutes} = require('./routes');
+const { termModel } = require('./models');
+const { any } = require('joi');
 
 const app = express()
 const port = 4000|| 4001;
@@ -25,3 +27,9 @@ app.use((req, res, next) => {
 app.listen(port,()=>{
     console.log(`server is running on PORT ${port}`)
 });
+
+// const del = async ()=>{
+//     await termModel.deleteMany()
+// }
+
+// del()

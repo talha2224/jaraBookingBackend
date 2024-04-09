@@ -21,7 +21,10 @@ module.exports.optionModel = require('./option.schema')
 module.exports.personalModel = require('./personalized.schema')
 module.exports.loadginModel = require('./lodging.schema')
 module.exports.blockedModel = require('./blockedBooking.schema')
-
-
 module.exports.disableModel = require('./disable.schema')
+
+
+module.exports.bookingModel = require('./booking.schema')
+
+
 

@@ -26,5 +26,7 @@ module.exports.disableModel = require('./disable.schema')
 
 module.exports.bookingModel = require('./booking.schema')
 
+// module.exports.mainRoomModel = require("./rooms.schema")
+
 
 

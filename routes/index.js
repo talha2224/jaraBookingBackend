@@ -26,6 +26,9 @@ const blockedDaypass = require('./blockedDaypass.router')
 const disableRoute = require('./disable.router')
 
 
+const mainRoomRoute = require("./mainRoom.router")
+
+
 
 
 
@@ -55,6 +58,8 @@ allRoutes.use("/drink",drinkRoute)
 allRoutes.use("/holiday",holidayRoute)
 allRoutes.use("/block/booking",blockedDaypass)
 allRoutes.use("/disable",disableRoute)
+
+allRoutes.use("/main/rooms",mainRoomRoute)
 
 
 

@@ -8,7 +8,8 @@ const discountRoute = require('./discount.route')
 const DaypassdiscountRoute = require('./daypassDiscount.route')
 const DaypassVoucherRoute = require('./daypassVoucher.route')
 const paymentRoute = require('./payment.router')
-const bookingRoute = require('./booking.router')
+const overnightBookingRoute = require('./overnight.booking.router')
+const daypassBookingRoute = require('./daypass.booking.router')
 
 // SETTINGS 
 const termRoute = require('./term.router')
@@ -42,7 +43,9 @@ allRoutes.use("/discount",discountRoute)
 allRoutes.use("/daypass/discount",DaypassdiscountRoute)
 allRoutes.use("/daypass/voucher",DaypassVoucherRoute)
 allRoutes.use("/payment",paymentRoute)
-allRoutes.use("/booking",bookingRoute)
+allRoutes.use("/overnight/booking",overnightBookingRoute)
+allRoutes.use("/daypass/booking",daypassBookingRoute)
+
 
 // SETTINGS 
 allRoutes.use("/terms/condition",termRoute)

@@ -8,6 +8,8 @@ const {statusCode} = require('./utils/statusCode');
 const {allRoutes} = require('./routes');
 const { termModel } = require('./models');
 const { any } = require('joi');
+const { RoomTypes, SubRooms } = require('./models/rooms.schema');
+const { overnightBooking } = require('./models/overnight.booking.schema');
 
 const app = express()
 const port = 4000|| 4001;
@@ -28,8 +30,10 @@ app.listen(port,()=>{
     console.log(`server is running on PORT ${port}`)
 });
 
-// const del = async ()=>{
-//     await termModel.deleteMany()
-// }
+const del = async ()=>{
+    // await RoomTypes.deleteMany()
+    // await SubRooms.deleteMany()
+    // await overnightBooking.deleteMany()
+}
 
-// del()
+del()

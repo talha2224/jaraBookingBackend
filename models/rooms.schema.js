@@ -9,9 +9,12 @@ const roomsSchema = mongoose.Schema({
 const subRoomsSchema = mongoose.Schema({
     roomId:{type:mongoose.Schema.Types.ObjectId,ref:"RoomTypes"},
     title:{type:String,required:true},
-    capacity:{type:Number,required:true},
-    // availableRoom:{type:Number},
-    booked:{type:Boolean,default:false}
+    totalRoom:{type:Number,required:true},
+    availableRoom:{type:Number},
+    adults:{type:Number,default:false},
+    children:{type:Number,default:false},
+    toddler:{type:Number,default:false},
+    infant:{type:Number,default:false}
 })
 
 
